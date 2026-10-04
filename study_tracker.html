@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Study Master Tracker</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 24px;
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 1350px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 28px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #eaedf1;
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .header h1 { margin: 0; font-size: 22px; color: #1a202c; }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .stat-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 16px;
+            text-align: center;
+        }
+        .stat-card .value { font-size: 26px; font-weight: bold; color: #2563eb; margin-top: 6px; }
+        .stat-card .label { font-size: 12px; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; }
+        h2 { color: #1e293b; border-left: 4px solid #2563eb; padding-left: 12px; margin-top: 32px; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 12px; margin-bottom: 8px; }
+        th {
+            background-color: #f1f5f9;
+            color: #475569;
+            text-align: left;
+            padding: 11px 14px;
+            font-weight: 600;
+            border: 1px solid #cbd5e1;
+        }
+        td { padding: 11px 14px; border: 1px solid #cbd5e1; vertical-align: top; }
+        tr:hover td { background-color: #f8fafc; }
+        .badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 9999px;
+            font-size: 12px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .green  { background: #dcfce7; color: #166534; }
+        .yellow { background: #fef3c7; color: #92400e; }
+        .blue   { background: #dbeafe; color: #1e40af; }
+        .purple { background: #f3e8ff; color: #6b21a8; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="header">
+        <h1>📊 Python Engineering Master Tracker (Full History)</h1>
+        <span class="badge blue">Նպատակ՝ Backend + Applied AI Engineer</span>
+    </div>
+
+    <!-- ՎԻՃԱԿԱԳՐՈՒԹՅՈՒՆ -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="label">Ընդհանուր Ժամեր</div>
+            <div class="value">5.7 ժամ</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Ընդհանուր Session-ներ</div>
+            <div class="value">5</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Լուծված Խնդիրներ</div>
+            <div class="value" style="color:#16a34a;">15 / 15 ✅</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Ստուգողականին Մնացել է</div>
+            <div class="value">~39 ժամ</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Ընթացքի Տեմպ</div>
+            <div class="value" style="color:#16a34a; font-size:20px;">🚀 Առաջ ենք</div>
+        </div>
+    </div>
+
+    <!-- ՕՐԱԿԱՆ ՄԱՏՅԱՆ -->
+    <h2>🗓️ Օրական Մատյան (Բոլոր 5 Session-ները)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Ամսաթիվ</th>
+                <th>Փուլ</th>
+                <th>Ժամ (Սկիզբ–Ավարտ)</th>
+                <th>Փաստացի</th>
+                <th>Նախատեսված</th>
+                <th>Տարբերություն</th>
+                <th>Թեման</th>
+                <th>Հասկացե՞լ</th>
+                <th>Գրաֆիկ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>1</b></td>
+                <td>22/09/2026</td>
+                <td>Փուլ 1 (Ֆունկցիաներ & Ալգորիթմներ)</td>
+                <td>18:48 – 20:05</td>
+                <td><b>77 րոպե</b></td>
+                <td>60 րոպե</td>
+                <td style="color:#2563eb;"><b>+17 րոպե</b></td>
+                <td>LeetCode ալգորիթմներ, Hash map, Time Complexity, Ստեկ (Stack)</td>
+                <td><span class="badge green">🟢 Լիարժեք 100%</span></td>
+                <td><span class="badge purple">🚀 Առաջ ենք</span></td>
+            </tr>
+            <tr>
+                <td><b>2</b></td>
+                <td>26/09/2026</td>
+                <td>Փուլ 1 (Տրամաբանություն)</td>
+                <td>17:52 – 18:49</td>
+                <td><b>57 րոպե</b></td>
+                <td>60 րոպե</td>
+                <td style="color:#16a34a;"><b>–3 րոպե</b></td>
+                <td>Թվերի տեսություն, Ցիկլեր (<code>while</code>/<code>for</code>), Մնացորդներ (<code>% 10</code>, <code>// 10</code>)</td>
+                <td><span class="badge green">🟢 Լիարժեք 100%</span></td>
+                <td><span class="badge green">🟢 Գրաֆիկով</span></td>
+            </tr>
+            <tr>
+                <td><b>3</b></td>
+                <td>30/09/2026</td>
+                <td>Փուլ 1 (Թվերի տեսություն + Ռեկուրսիա)</td>
+                <td>17:50 – 19:00</td>
+                <td><b>70 րոպե</b></td>
+                <td>60 րոպե</td>
+                <td style="color:#2563eb;"><b>+10 րոպե</b></td>
+                <td>Թվանշանների դիրքեր, Ֆակտորիալ, Քառակուսու մասերի տրոհում</td>
+                <td><span class="badge green">🟢 Լիարժեք 100%</span></td>
+                <td><span class="badge purple">🚀 Առաջ ենք</span></td>
+            </tr>
+            <tr>
+                <td><b>4</b></td>
+                <td>03/10/2026</td>
+                <td>Փուլ 1 (Թվեր + Փակ ցիկլեր)</td>
+                <td>17:30 – 18:31</td>
+                <td><b>61 րոպե</b></td>
+                <td>60 րոպե</td>
+                <td style="color:#2563eb;"><b>+1 րոպե</b></td>
+                <td>Բազմակի աստիճաններ, Փակ անվերջ ցիկլերի հայտնաբերում</td>
+                <td><span class="badge green">🟢 Լիարժեք 100%</span></td>
+                <td><span class="badge green">🟢 Գրաֆիկով</span></td>
+            </tr>
+            <tr>
+                <td><b>5</b></td>
+                <td>04/10/2026</td>
+                <td>Փուլ 1 (Մաթեմատիկա + Տեքստի Մշակում)</td>
+                <td>12:58 – 14:16</td>
+                <td><b>78 րոպե</b></td>
+                <td>60 րոպե</td>
+                <td style="color:#2563eb;"><b>+18 րոպե</b></td>
+                <td>ԱՄԵԲ, ԱՄՓԲ, Կոտորակներ, Տողեր (Split/Join), Ձայնավորներ, Օլիմպիադա</td>
+                <td><span class="badge green">🟢 Լիարժեք 100%</span></td>
+                <td><span class="badge purple">🚀 Առաջ ենք</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ԽՆԴԻՐՆԵՐԻ ՄԱՏՅԱՆ -->
+    <h2>🧩 Լուծված Բոլոր 15 Խնդիրները</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Խնդիր</th>
+                <th>Աղբյուր</th>
+                <th>Բարդություն</th>
+                <th>Կարգավիճակ</th>
+                <th>Լուծման Տեսակ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td><b>Two Sum</b></td><td>LeetCode #1</td><td><span class="badge yellow">Medium</span></td><td><span class="badge green">✅ Լուծված</span></td><td>Ինքնուրույն</td></tr>
+            <tr><td>2</td><td><b>Best Time to Buy and Sell Stock</b></td><td>LeetCode #121</td><td><span class="badge yellow">Medium</span></td><td><span class="badge green">✅ Լուծված</span></td><td>Ինքնուրույն</td></tr>
+            <tr><td>3</td><td><b>Valid Parentheses (Stack)</b></td><td>LeetCode #20</td><td><span class="badge yellow">Medium</span></td><td><span class="badge green">✅ Լուծված</span></td><td>Ինքնուրույն</td></tr>
+            <tr><td>4</td><td><b>Ավտոմորֆիկ թվեր (1–10000)</b></td><td>DIGI.code Ավագ</td><td><span class="badge yellow">Medium</span></td><td><span class="badge green">✅ Լուծված</span></td><td>Ինքնուրույն (+1 hint)</td></tr>
+            <tr><td>5</td><td><b>Թվի Շրջում + Պալինդրոմ</b></td><td>Interview Classic</td><td><span class="badge yellow">Medium</span></td><td><span class="badge green">✅ Լուծված</span></td><td>Ինքնուրույն</td></tr>
+            <tr><td>6</td><td><b>Disarium Numbers (1–1000)</b></td><td>Math Classic</td><td><span class="badge yellow">Medium</span></td><td><span class="badge green">✅ Լուծված</span></td><td>Ինքնուրույն</td></tr>
+            <tr><td>7</td><td><b>Strong Numbers (1–100000)</b></td><td>Math / Recursion</td><td><span class="badge yellow">Medium</span></td><td><span class="badge green">✅ Լուծված</span></td><td>Ինքնուրույն</td></tr>
+            <tr><td>8</td><td><b>Kaprekar Numbers (1–1000)</b></td><td>Math Classic</td><td><span class="badge purple">Medium+</span></td><td><span class="badge green">✅ Լուծված</span></td><td>Ինքնուրույն</td></tr>
+            <tr><td>9</td><td><b>Armstrong Numbers (1–10000)</b></td><td>Math Classic</td><td><span class="badge yellow">Medium</span></td><td><span class="badge green">✅ Լուծված</span></td><td>Ինքնուրույն</td></tr>
+            <tr><td>10</td><td><b>Happy Numbers (1–100)</b></td><td>LeetCode #202</td><td><span class="badge yellow">Medium</span></td><td><span class="badge green">✅ Լուծված</span></td><td>Ինքնուրույն (+1 hint)</td></tr>
+            <tr><td>11</td><td><b>ԱՄԵԲ / GCD (Էվկլիդեսի ալգորիթմ)</b></td><td>Algorithm Classic</td><td><span class="badge yellow">Medium</span></td><td><span class="badge green">✅ Լուծված</span></td><td>Ինքնուրույն</td></tr>
+            <tr><td>12</td><td><b>ԱՄՓԲ / LCM + Կոտորակների կրճատում</b></td><td>Algorithm Classic</td><td><span class="badge yellow">Medium</span></td><td><span class="badge green">✅ Լուծված</span></td><td>Ինքնուրույն</td></tr>
+            <tr><td>13</td><td><b>Տողի բառերի շրջում (Reverse Words)</b></td><td>DIGI.code Օլիմպիադա</td><td><span class="badge yellow">Medium</span></td><td><span class="badge green">✅ Լուծված</span></td><td>Ինքնուրույն</td></tr>
+            <tr><td>14</td><td><b>Ձայնավորների փոխարինում ըստ ինդեքսի</b></td><td>DIGI.code Օլիմպիադա</td><td><span class="badge yellow">Medium</span></td><td><span class="badge green">✅ Լուծված</span></td><td>Ինքնուրույն</td></tr>
+            <tr><td>15</td><td><b>Ամենաերկար բառի շրջում (Longest Word)</b></td><td>DIGI.code Օլիմպիադա</td><td><span class="badge yellow">Medium</span></td><td><span class="badge green">✅ Լուծված</span></td><td>Ինքնուրույն</td></tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>
