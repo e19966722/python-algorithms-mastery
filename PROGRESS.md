@@ -19,30 +19,30 @@
 ## ⏱️ Ժամերի և Առաջընթացի Գրանցամատյան (Session Tracker)
 
 ### Ընդհանուր վիճակագրություն
-* **Ընդհանուր աշխատած ժամեր**՝ **6.8 ժամ (408 րոպե)**
-* **Ընդհանուր լուծված խնդիրներ**՝ **18 լուրջ ալգորիթմական խնդիր** (բոլորը ✅)
-* **Լիովին ինքնուրույն լուծված բարդ խնդիրներ**՝ 16 խնդիր
-* **Մոտակա մեծ ստուգողական (40-50 ժամից)**՝ Մնացել է ~38 ժամ
+* **Ընդհանուր աշխատած ժամեր**՝ **8.4 ժամ (505 րոպե)**
+* **Ընդհանուր լուծված խնդիրներ**՝ **19 լուրջ ալգորիթմական խնդիր** (բոլորը ✅)
+* **Լիովին ինքնուրույն լուծված բարդ խնդիրներ**՝ 17 խնդիր
+* **Մոտակա մեծ ստուգողական (40-50 ժամից)**՝ Մնացել է ~36 ժամ
 
 ---
 
 ## 🗺️ Python Core & Engineering Master Roadmap (Մինչև ՕՕՊ-ն ընկած ծրագիրը)
 
 ### ՄՈԴՈՒԼ 1․ Python-ի Ներքին Մեխանիզմը և Հիշողությունը (Internal Architecture & Memory)
-- [ ] CPython, Bytecode (`.pyc`), PVM (Python Virtual Machine)
-- [ ] `PyObject` կառուցվածքը C-ում, `id()` և `type()`
-- [ ] Փոփոխականը որպես հղում (Reference vs Variable label)
-- [ ] Mutability (Mutable vs Immutable), օբյեկտի փոփոխությունը հիշողության մեջ
-- [ ] Integer caching (-5-ից 256) և String interning
-- [ ] `is` (հասցեների նույնականություն) ընդդեմ `==` (արժեքների հավասարություն)
-- [ ] Dynamic Array, Over-allocation list-ում, `sys.getsizeof()`
+- [x] CPython, Bytecode (`.pyc`), PVM (Python Virtual Machine)
+- [x] `PyObject` կառուցվածքը C-ում, `id()` և `type()`
+- [x] Փոփոխականը որպես հղում (Reference vs Variable label)
+- [x] Mutability (Mutable vs Immutable), օբյեկտի փոփոխությունը հիշողության մեջ
+- [x] Integer caching (-5-ից 256) և String interning
+- [x] `is` (հասցեների նույնականություն) ընդդեմ `==` (արժեքների հավասարություն)
+- [x] Dynamic Array, Over-allocation list-ում, `sys.getsizeof()`
 
 ### ՄՈԴՈՒԼ 2․ Բազմաչափ Կառուցվածքներ և Թակարդներ (Nested Data & Hash Tables)
-- [ ] Մատրիցներ (2D lists / list of lists), `matrix[row][col]`, Nested loops
-- [ ] ⚠️ Թակարդ՝ `[[0] * 3] * 3` vs `[[0 for _ in range(3)] for _ in range(3)]`
-- [ ] Slicing և Shallow vs Deep Copy (`copy.copy()` vs `copy.deepcopy()`)
+- [x] Մատրիցներ (2D lists / list of lists), `matrix[row][col]`, Nested loops
+- [x] ⚠️ Թակարդ՝ `[[0] * 3] * 3` vs `[[0 for _ in range(3)] for _ in range(3)]`
+- [x] Slicing և Shallow vs Deep Copy (`copy.copy()` vs `copy.deepcopy()`)
 - [ ] Բարդ Nested JSON/API տվյալների մշակում (List of Dicts, Nested Dicts)
-- [ ] Hash Tables, `__hash__`, ինչու են միայն immutable-ները hashable, Hash Collisions
+- [x] Hash Tables, `__hash__`, ինչու են միայն immutable-ները hashable, Hash Collisions
 
 ### ՄՈԴՈՒԼ 3․ Pythonic Իտերացիա և Կառավարում (Comprehensions & Advanced Flow)
 - [ ] List, Dict, Set comprehensions (ներդրված comprehensions, մատրիցի տրանսպոնացում)
@@ -74,6 +74,8 @@
 1. **Boolean Logic (`and` vs `or`)** — Ուշադրություն `while a != 1 and a != 4` տիպի պայմաններին։
 2. **Անվերջ ցիկլերի դետեկցիա (Cycle Detection)** — Երբ թիվը չի վերադառնում սկզբնական արժեքին, այլ պտտվում է միջանկյալ շրջանում։
 3. **Nested Loops Complexity** — Ցիկլի ներսում `.count()` կամ `.remove()` կանչելիս գիտակցել $O(n^2)$ բարդությունը և փոխարինել $O(n)$ բառարաններով կամ Two Pointers-ով։
-4. **Ցուցակների Հղումներ vs Պատճեններ (Reference vs Shallow Copy)** — Հիշել, որ Python-ում `b = a` ցուցակը չի պատճենում, այլ ստեղծում է երկրորդ հղում նույն հիշողությանը: Պատճենելու համար անհրաժեշտ է `a.copy()` կամ `a[:]`:
+4. **Ցուցակների Հղումներ vs Պատճեններ (Reference vs Shallow Copy vs Deep Copy)** — Հիշել, որ Python-ում `b = a` ցուցակը չի պատճենում, այլ ստեղծում է երկրորդ հղում նույն հիշողությանը: Պատճենելու համար անհրաժեշտ է `a.copy()` կամ `a[:]`: Ներդրվածների համար՝ `copy.deepcopy()`:
 5. **Ցուցակի ձևափոխում ցիկլի ընթացքում (Mutating list during iteration)** — Ցուցակից տարր ջնջելը հենց այդ ցուցակի վրայով պտտվող `for` ցիկլում բերում է ինդեքսների տեղաշարժի (index shift) և հարևան տարրերի բացթողման:
+6. **`is` vs `in` / `not in` բառարաններում** — `key not in d` (ստուգում է բանալու առկայությունը), իսկ `key is not d` (ստուգում է, թե արդյոք դրանք տարբեր օբյեկտներ են RAM-ում):
+7. **CPython Internals (Spaced Repetition-ով)** — `PyObject`, RAM հասցեներ `id()`, Small Integer Caching (-5-ից 256), Hashability (ինչու միայն immutable-ները կարող են լինել key): Կրկնել գործնական խնդիրներում փոքր դոզաներով։
 
