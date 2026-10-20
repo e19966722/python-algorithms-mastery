@@ -13,18 +13,19 @@
 | **5** | 04/10/2026 | Փուլ 1 (Մաթեմատիկա + Տեքստի Մշակում) | 12:58 – 14:16 | **78 րոպե** | 60 րոպե | +18 ր | ԱՄԵԲ (GCD), ԱՄՓԲ (LCM), Կոտորակներ, Տողեր (Split/Join), Օլիմպիադա | 🟢 Լիարժեք (100%) | 🚀 Առաջ ենք | 6 խնդիր՝ GCD, LCM, Fraction, Reverse Words, Vowels Replace, Longest Word |
 | **6** | 05/10/2026 | Փուլ 1 (Բառարաններ, Ցուցակներ, In-Place & Two Pointers) | 13:56 – 15:01 | **65 րոպե** | 60 րոպե | +5 ր | Dictionaries (CRUD), Lists (CRUD), Frequency Counter, Two Pointers $O(n)$ | 🟢 Լիարժեք (100%) | 🚀 Առաջ ենք | Valid Anagram (#242), First Unique Char (#387), Move Zeroes (#283) |
 | **7** | 08/10/2026 | Փուլ 1 (CPython, RAM, Մատրիցներ & Հեշ) | 16:09 – 17:46 | **97 րոպե** | 60 րոպե | +37 ր | CPython, PyObject, RAM, `id()`, `is` vs `==`, Small Int Caching, Mutability, Shallow/Deep Copy, 2D Matrix, Hash Tables | 🟡 Կրկնության կարիք (Ինտերնալներ) + 🟢 Խնդիրներ | 🚀 Առաջ ենք | Group Anagrams (LeetCode #49), 4x4 Diagonal Matrix |
+| **8** | 20/10/2026 | Փուլ 2 (Nested Data, JSON & Comprehensions) | 17:46 – 18:49 | **63 րոպե** | 60 րոպե | +3 ր | Nested Dicts/Lists (JSON data), Dictionary aggregation, Dict & List Comprehensions, `zip()`, In-place deletion bug hunt | 🟢 Լիարժեք (100%) | 🚀 Առաջ ենք | E-Commerce Orders Analysis (#20), Dict Comprehension |
 
 ---
 
 ## 📈 Ընդհանուր Ամփոփում (All-Time Stats)
-* **Ընդհանուր Session-ներ**՝ 7 session
-* **Ընդհանուր Աշխատած Ժամեր**՝ **8.4 ժամ (505 րոպե)**
-* **Ընդհանուր Լուծված Խնդիրներ**՝ **19 լուրջ ալգորիթմական խնդիր** (բոլորը լուծված են ✅)
-* **Մոտակա մեծ ստուգողականին մնացել է**՝ ~36 ժամ
+* **Ընդհանուր Session-ներ**՝ 8 session
+* **Ընդհանուր Աշխատած Ժամեր**՝ **9.5 ժամ (568 րոպե)**
+* **Ընդհանուր Լուծված Խնդիրներ**՝ **20 լուրջ ալգորիթմական խնդիր** (բոլորը լուծված են ✅)
+* **Մոտակա մեծ ստուգողականին մնացել է**՝ ~35 ժամ
 
 ---
 
-## 🧩 Բոլոր 19 Խնդիրների Մատյան (Problem Solving Tracker)
+## 🧩 Բոլոր 20 Խնդիրների Մատյան (Problem Solving Tracker)
 
 | # | Խնդիր | Աղբյուր | Բարդություն | Լուծման Տեսակ | Կարգավիճակ |
 |:---:|---|:---:|:---:|:---:|:---:|
@@ -47,3 +48,4 @@
 | 17 | **First Unique Character (Օպտիմիզացիա $O(n^2) \to O(n)$)** | LeetCode #387 | Easy/Medium | Ինքնուրույն | ✅ Լուծված է |
 | 18 | **Move Zeroes (In-Place & Two Pointers $O(n)$)** | LeetCode #283 | Medium | Ինքնուրույն | ✅ Լուծված է |
 | 19 | **Group Anagrams (Հեշ Աղյուսակներ & Բառարաններ)** | LeetCode #49 | Medium | Ինքնուրույն | ✅ Լուծված է |
+| 20 | **E-Commerce Orders Analysis (Nested Data & Max Spender)** | Practical Backend / Analytics | Medium | Ինքնուրույն | ✅ Լուծված է |
